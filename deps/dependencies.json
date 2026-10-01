@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "mbedtls": {
+    "type": "git-submodule",
+    "url": "https://github.com/Mbed-TLS/mbedtls.git",
+    "tag": "mbedtls-3.6.7",
+    "commit": "068ff080b369adfac81509f9b57b2afabaf82dc5",
+    "version": "3.6.7",
+    "directory": "mbedtls-3.6.7",
+    "license": "Apache-2.0 OR GPL-2.0-or-later",
+    "recursive_submodules": {
+      "framework": {
+        "url": "https://github.com/Mbed-TLS/mbedtls-framework",
+        "commit": "dde0c4a0e448a0552f18817dcea633bb851fd288"
+      }
+    }
+  },
+  "python_validation_environment": {
+    "python": "3.14.7",
+    "cryptography": "50.0.2"
+  },
+  "notes": [
+    "Python versions describe the tested environment, not a transitive package lock.",
+    "External compiler and SDK dependencies are documented separately.",
+    "Pairing oracle requires Python cryptography; it does not require NumPy.",
+    "Mbed TLS and its framework are pinned by Git submodule commits. Initialize them with git submodule update --init --recursive.",
+    "Do not use --remote when preparing the documented dependency versions. Build outputs remain outside dependency source directories."
+  ]
+}

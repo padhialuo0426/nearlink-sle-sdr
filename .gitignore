@@ -1,0 +1,56 @@
+# Build outputs (dependency sources remain tracked as submodules)
+/sle-rt/build/
+/sle-rt/build-*/
+/build/
+/build-*/
+*.o
+*.a
+*.so
+*.elf
+*.bin
+*.fwpkg
+*.map
+*.gcda
+*.gcno
+
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Local tools, captures, logs and device backups
+/toolchains/
+/downloads/
+/logs/
+/captures/
+/artifacts/
+/backups/
+/tmp/
+*.log
+*.jsonl
+*.iq
+*.sigmf-data
+
+# Local secrets and host-specific configuration
+/keys/
+/secrets/
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+/core
+/core.[0-9]*

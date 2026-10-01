@@ -1,0 +1,3 @@
+[submodule "deps/mbedtls-3.6.7"]
+	path = deps/mbedtls-3.6.7
+	url = https://github.com/Mbed-TLS/mbedtls.git
